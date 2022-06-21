@@ -1,0 +1,41 @@
+### create procedures
+POST  http://localhost:7071/api/crud/procedures
+
+{
+      "id": 3,
+      "title": "扶養追加の手続き",
+      "description": "結婚、出産、配偶者が退職したときなど"
+    }
+
+### get procedures
+GET http://localhost:7071/api/crud/procedures
+
+### create todos
+POST  http://localhost:7071/api/crud/todos
+
+ {
+      "id": "4",
+      "title": "TJ さんの入社手続き",
+      "targetDateTitle": "入社予定日",
+      "targetDate": "2020-01-01",
+      "state": "inProgress"
+    }
+
+### create procedure_requests
+POST  http://localhost:7071/api/crud/procedure_requests
+
+{
+    "id": "3",
+    "memberId": "3",
+    "targetDateTitle": "入社予定日",
+    "targetDate": "2020-01-01"
+}
+
+### create members
+POST  http://localhost:7071/api/crud/members
+
+   {
+      "id": "3",
+      "name": "jiang jifa",
+      "procedures": []
+    }
